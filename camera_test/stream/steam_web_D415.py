@@ -90,10 +90,10 @@ try:
         else:
             images = np.hstack((color_image, depth_colormap)) #depth 이미지 불러오기
 #즉 두개의 이미지를 하나의 이미지안에 모아두는것이 images의 역활
-        # Show images
-        cv2.namedWindow('RealSense', cv2.WINDOW_AUTOSIZE)
-        cv2.imshow('RealSense', images)
-        cv2.waitKey(1)
+        # Show images only run gui
+        # cv2.namedWindow('RealSense', cv2.WINDOW_AUTOSIZE)
+        # cv2.imshow('RealSense', images)
+        # cv2.waitKey(1)
 
         # #만약 일반 usb카메라나 rtsp통신의 이미지를 가져올거라면
         # images = cv2.VideoCapture('rtsp://freja.hiof.no:1935/rtplive/_definst_/hessdalen03.stream')  # use 0 for web camera
